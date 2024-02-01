@@ -145,7 +145,6 @@ const Main = () => {
     }
     const handleSizeChange = (event) => {
         setSize(event.target.value)
-        console.log('size:', size)
 
     }
     const handleEntryChange = (e) => {
@@ -158,14 +157,12 @@ const Main = () => {
     const handleSubmit = (e) => {
         setParkingSlot([...parkingSlot, size])
         parkTheVehicle(1)
-        console.log('click')
     }
 
 
     const parkTheVehicle = (slotNumber, vehicleSize) => {
         //occupy parking - remove slots
         myParkingMap[slotNumber].occupied = true
-        console.log(myParkingMap)
     }
 
     const unParkTheVehicle = (slotNumber, ) => {
