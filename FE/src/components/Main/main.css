@@ -1,0 +1,10 @@
+.main {
+    display: flex;
+    margin: 50px;
+}
+
+.left {
+    display:block;
+    text-align: start;
+    
+}
