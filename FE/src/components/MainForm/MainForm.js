@@ -99,7 +99,16 @@ const MainForm = () => {
                 break;
         }
         
-      alert ('Parked at: ' + name)
+        myParkingMap.map((item) => {
+            if(item.occupied) {
+                alert('Parking occupied');
+            }
+            else if(name == item.name) {
+                item.occupied = true;
+                alert ('Parked at: ' + name)
+            }
+        })
+
     }
 
     const unParkTheVehicle = (slotNumber,) => {
